@@ -1,9 +1,23 @@
+@import './Vars.scss';
+
 body {
     margin: 0;
-    font-family: 'Muli', sans-serif;
-    background: #8f57fd;
+    font-family: $theme-font;
+    background: $main-color;
   }
   
   * {
     box-sizing: border-box;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .main__description--title {
+      font-size: 30px;
+    }
+  
+    .footer {
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
